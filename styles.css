@@ -1,19 +1,65 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: sans-serif;
     text-align: center;
-}
-
-a {
     color: #675D50;
-    text-decoration: none
+    background-color: #F3EEEA;
 }
 
+.sunflower-logo-home {
+    margin: 20px auto 15px;
+    width: 400px;
+    
+}
 
+.sunflower-logo-home > img {
+    width: 400px; 
+    margin: 0 auto 15px;
+}
+
+.facebook-logo {
+    margin: 0 auto;
+}
 
 .menu {
-    background-color: #C1D0B5;
-    color: white;
-    
+    margin: 5px auto;
+    color: #675D50;;
+}
+
+.menu > a {
+    color: #675D50;
+    text-decoration: none;
+}
+
+.about-text {
+    width: 60%;
+    margin: 15px auto;
+}
+
+@media (max-width: 400px) {
+    .sunflower-logo-home > img {
+        width: 250px; 
+        margin: 0 auto 15px;
+    }
+}
+
+.treatment-container {
+    width: 60%;
+    margin: 1px auto;
+}
+
+.treatment {
+    width: 300px;
+    display: inline-block;
+    margin: 20px;
+   
+}
+
+.add-on-text {
+    margin-top: 25px;
 }
