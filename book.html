@@ -58,12 +58,16 @@
                     <input type="text" class="form-control" id="yourDetailsInput">
                 </div>
                 <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">Last Name</label>
+                    <label for="yourDetailsInput" class="form-label">Last Name</label>
                     <input type="text" class="form-control" id="yourDetailsInput">
                 </div>
                 <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">Email Address</label>
+                    <label for="yourDetailsInput" class="form-label">Email Address</label>
                     <input type="email" class="form-control" id="yourDetailsInput">
+                </div>
+                <div class="mb-3">
+                    <label for="yourDetailsInput" class="form-label">Mobile Number</label>
+                    <input type="text" class="form-control" id="yourDetailsInput">
                 </div>
 
                 
@@ -74,19 +78,19 @@
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
                       <label class="form-check-label" for="gridRadios1">
-                        Swedish Full Body Massage
+                        Swedish Massage
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
                       <label class="form-check-label" for="gridRadios2">
-                        Aromatherapy Full Body Massage
+                        Aromatherapy Massage
                       </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
                         <label class="form-check-label" for="gridRadios1">
-                        Hot Stone Full Body Massage
+                        Hot Stone Massage
                         </label>
                     </div>
                     <div class="form-check">
@@ -109,7 +113,8 @@
                     </div>
                   </div>
                 </fieldset>
-                <fieldset class="row mb-3">
+                
+                  <fieldset class="row mb-3">
                     <legend class="col-form-label col-sm-2 pt-0">Additional treatment</legend>
                     <div class="col-sm-10">
                       <div class="form-check">
@@ -132,69 +137,210 @@
                       </div>
                     </div>
                   </fieldset>
+
                   <h3 class="mb-3">Appointment details</h3>
-                  <button type="submit" class="btn btn-dark" disabled>This week</button>
-                  <button type="submit" class="btn btn-outline-dark">Next week</button>
-                  <button type="submit" class="btn btn-outline-dark">2 weeks time</button>
-                  <fieldset class="row mt-3 mb-3">                 
-                    <legend class="col-form-label col-sm-2 pt-0">Select date</legend>
-                    <div class="col-sm-10">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1" disabled>
-                        <label class="form-check-label" for="gridRadios1">
-                            Monday 15th January
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios2" value="option2">
-                        <label class="form-check-label" for="gridRadios2">
-                            Tuesday 16th January
-                        </label>
-                      </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
+                  <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                    <button class="btn btn-outline-dark active" type="button" id="pill-tab-0" data-bs-toggle="pill" href="#pill-tabpanel-0" role="tab" aria-controls="pill-tabpanel-0" aria-selected="true">This week</button>
+                    </li>
+                    <li class="nav-item">
+                    <button class="btn btn-outline-dark ms-2" type="button" id="pill-tab-1" data-bs-toggle="pill" href="#pill-tabpanel-1" role="tab" aria-controls="pill-tabpanel-1" aria-selected="false">Next week</button>
+                    </li>
+                    <li class="nav-item">
+                    <button class="btn btn-outline-dark ms-2" type="button" id="pill-tab-2" data-bs-toggle="pill" href="#pill-tabpanel-2" role="tab" aria-controls="pill-tabpanel-2" aria-selected="false">2 weeks time</button>
+                    </li>
+                  </ul>
+                  
+                  <!--Tab 1 Content-->
+                  <div class="tab-content py-3 mt-2">
+                    <div class="tab-pane active" id="pill-tabpanel-0" role="tabpanel" aria-labelledby="pill-tab-0">
+                      <fieldset class="row mt-3 mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Select date</legend>
+                         <div class="col-sm-10">
+                            <div class="form-check">
+                             <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1" disabled>
+                              <label class="form-check-label" for="gridRadios1">
+                                Monday 15th January
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios2" value="option2">
+                              <label class="form-check-label" for="gridRadios2">
+                                Tuesday 16th January
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
+                              <label class="form-check-label" for="gridRadios1">
+                                Wednesday 17th January
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
+                              <label class="form-check-label" for="gridRadios1">
+                              Thursday 18th January
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
+                              <label class="form-check-label" for="gridRadios1">
+                              Friday 19th January
+                             </label>
+                        </div>
+                    </fieldset>
+          
+                    <fieldset class="row mb-3">
+                      <legend class="col-form-label col-sm-2 pt-0">Select time</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="timeRadios" id="gridRadios1" value="option1" >
                           <label class="form-check-label" for="gridRadios1">
-                            Wednesday 17th January
+                              5:00pm
                           </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
-                        <label class="form-check-label" for="gridRadios1">
-                          Thursday 18th January
-                        </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="timeRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                              6:30pm
+                          </label>
+                        </div>                                      
+                    </fieldset>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
-                        <label class="form-check-label" for="gridRadios1">
-                          Friday 19th January
-                        </label>
+          
+                    <!--Tab 2 Content-->
+                    <div class="tab-pane" id="pill-tabpanel-1" role="tabpanel" aria-labelledby="pill-tab-1">
+                      <fieldset class="row mt-3 mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Select date</legend>
+                         <div class="col-sm-10">
+                            <div class="form-check">
+                             <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1" disabled>
+                              <label class="form-check-label" for="gridRadios1">
+                                Monday 22nd January
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios2" value="option2">
+                              <label class="form-check-label" for="gridRadios2">
+                                Tuesday 23rd January
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
+                              <label class="form-check-label" for="gridRadios1">
+                                Wednesday 24th January
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
+                              <label class="form-check-label" for="gridRadios1">
+                              Thursday 25th January
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
+                              <label class="form-check-label" for="gridRadios1">
+                              Friday 26th January
+                             </label>
+                        </div>
+                    </fieldset>
+          
+                    <fieldset class="row mb-3">
+                      <legend class="col-form-label col-sm-2 pt-0">Select time</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="timeRadios" id="gridRadios1" value="option1" >
+                          <label class="form-check-label" for="gridRadios1">
+                              5:00pm
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="timeRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                              6:30pm
+                          </label>
+                        </div>                                      
+                    </fieldset>
                     </div>
-                    </div>
-                </fieldset>
                     
-                <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-2 pt-0">Select time</legend>
-                    <div class="col-sm-10">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="timeRadios" id="gridRadios1" value="option1" >
-                        <label class="form-check-label" for="gridRadios1">
-                            5:00pm
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="timeRadios" id="gridRadios2" value="option2">
-                        <label class="form-check-label" for="gridRadios2">
-                            6:30pm
-                        </label>
-                      </div>                                      
-                  </fieldset>
-                <button type="submit" class="btn btn-dark">Book</button>
+                    <!--Tab 3 Content-->
+                    <div class="tab-pane" id="pill-tabpanel-2" role="tabpanel" aria-labelledby="pill-tab-2">
+                      <fieldset class="row mt-3 mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Select date</legend>
+                         <div class="col-sm-10">
+                            <div class="form-check">
+                             <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1" disabled>
+                              <label class="form-check-label" for="gridRadios1">
+                                Monday 29th January
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios2" value="option2">
+                              <label class="form-check-label" for="gridRadios2">
+                                Tuesday 30th January
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
+                              <label class="form-check-label" for="gridRadios1">
+                                Wednesday 31st January
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
+                              <label class="form-check-label" for="gridRadios1">
+                              Thursday 1st February
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="dateRadios" id="gridRadios1" value="option1">
+                              <label class="form-check-label" for="gridRadios1">
+                              Friday 2nd February
+                             </label>
+                        </div>
+                    </fieldset>
+          
+                    <fieldset class="row mb-3">
+                      <legend class="col-form-label col-sm-2 pt-0">Select time</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="timeRadios" id="gridRadios1" value="option1" >
+                          <label class="form-check-label" for="gridRadios1">
+                              5:00pm
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="timeRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                              6:30pm
+                          </label>
+                        </div>                                      
+                    </fieldset>
+                    </div>
+                
+                  
+                </div>
               </form>
         </div>
         
-
        </div> 
 
+      </div>
+
+       
+      </div>
+    </section>
+
+    <section> <!--Footer-->
+        <div class="container">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="./treatments.html" class="nav-link px-2 text-body-secondary">Treatments</a></li>
+                <li class="nav-item"><a href="./book.html" class="nav-link px-2 text-body-secondary">Book</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+              </ul>
+            </footer>
+          </div>
     </section>
     
 </body>
